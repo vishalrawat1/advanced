@@ -5,6 +5,20 @@ using ull = unsigned long long;
 using vi = vector<int>;
 using vll = vector<ll>;
 
+// Algorithm: Segment Tree
+// Problem: Range Sum Query - Mutable
+
+/*
+ * Problem Link: https://leetcode.com/problems/range-sum-query-mutable/ (LeetCode 307)
+ *
+ * Description: Implement a Segment Tree for efficient range queries and updates.
+ *
+ * Practice Questions:
+ * 1. Range Minimum Query: https://cp-algorithms.com/data_structures/segment_tree.html#range-minimum-query
+ * 2. Count of Range Sum: https://leetcode.com/problems/count-of-range-sum/
+ * 3. Parsing A Boolean Expression (Harder application): https://leetcode.com/problems/parsing-a-boolean-expression/
+ */
+
 const int N = 1e3 + 10;
 const int INF = 1e9;
 

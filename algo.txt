@@ -1,0 +1,8 @@
+prefix sum (kadhane's algo)
+strongly connected components - tarjan's algorithm (can be used in finding articulation point)
+sliding window with 3 pointer (leetcode 992)
+contribution proble (leetcode 907) and https://codeforces.com/problemset/problem/817/D
+squareroot _decompotition
+mo's algorithm (range queries)
+median of k sorted array (binary search)
+leetcode https://leetcode.com/problems/sell-diminishing-valued-colored-balls/ (binary search)
