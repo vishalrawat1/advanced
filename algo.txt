@@ -6,3 +6,5 @@ squareroot _decompotition
 mo's algorithm (range queries)
 median of k sorted array (binary search)
 leetcode https://leetcode.com/problems/sell-diminishing-valued-colored-balls/ (binary search)
+
+//templates - sliding window  , two pointer , disjoint set union ,  monotonic stack
