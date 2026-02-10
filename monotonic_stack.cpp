@@ -38,23 +38,68 @@ public:
         stack<int> s;
         unordered_map<int, int> next_greater;
 
-        for (int num : nums2) {
-            while (!s.empty() && s.top() < num) {
-                next_greater[s.top()] = num;
-                s.pop();
-            }
-            s.push(num);
-        }
+    vector<int> nextGreater(vector<int>& a) {
+            int n = a.size();
+            vector<int> ans(n, -1);
+            stack<int> st;
 
-        vector<int> res;
-        for (int num : nums1) {
-            if (next_greater.count(num)) {
-                res.push_back(next_greater[num]);
-            } else {
-                res.push_back(-1);
-            }
-        }
-        return res;
+            for (int i = n - 1; i >= 0; i--) {
+                while (!st.empty() && st.top() <= a[i])
+            st.pop();
+
+        ans[i] = st.empty() ? -1 : st.top();
+        st.push(a[i]);
+    }
+    return ans;
+}
+
+
+vector<int> prevGreater(vector<int>& a) {
+    int n = a.size();
+    vector<int> ans(n, -1);
+    stack<int> st;
+
+    for (int i = 0; i < n; i++) {
+        while (!st.empty() && st.top() <= a[i])
+            st.pop();
+
+        ans[i] = st.empty() ? -1 : st.top();
+        st.push(a[i]);
+    }
+    return ans;
+}
+
+vector<int> nextSmaller(vector<int>& a) {
+    int n = a.size();
+    vector<int> ans(n, -1);
+    stack<int> st;
+
+    for (int i = n - 1; i >= 0; i--) {
+        while (!st.empty() && st.top() >= a[i])
+            st.pop();
+
+        ans[i] = st.empty() ? -1 : st.top();
+        st.push(a[i]);
+    }
+    return ans;
+}
+
+vector<int> prevSmaller(vector<int>& a) {
+    int n = a.size();
+    vector<int> ans(n, -1);
+    stack<int> st;
+
+    for (int i = 0; i < n; i++) {
+        while (!st.empty() && st.top() >= a[i])
+            st.pop();
+
+        ans[i] = st.empty() ? -1 : st.top();
+        st.push(a[i]);
+    }
+    return ans;
+}
+
+
     }
 };
 
