@@ -8,3 +8,5 @@ median of k sorted array (binary search)
 leetcode https://leetcode.com/problems/sell-diminishing-valued-colored-balls/ (binary search)
 
 //templates - sliding window  , two pointer , disjoint set union ,  monotonic stack
+
+diameter of tree blog = https://codeforces.com/blog/entry/101271
